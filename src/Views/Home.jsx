@@ -2,7 +2,7 @@ import { Contacto } from "../Components/Contacto"
 import { Footer } from "../Components/Footer"
 import { Hacemos } from "../Components/Hacemos/Hacemos"
 import { Nosotros } from "../Components/Nosotros"
-import { Servicios } from "../Components/Servicios"
+import { Servicios } from "../Components/Servicios/Servicios"
 import { Somos } from "../Components/Somos"
 import styles from './Home.module.css'
 
