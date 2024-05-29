@@ -1,5 +1,5 @@
 import { Contacto } from "../Components/Contact/Contacto"
-import { Footer } from "../Components/Footer"
+// import { Footer } from "../Components/Footer"
 import { Hacemos } from "../Components/Hacemos/Hacemos"
 import { Servicios } from "../Components/Servicios/Servicios"
 import { Somos } from "../Components/Somos/Somos"
@@ -12,7 +12,7 @@ export const Home = () => {
         <Servicios />
         <Somos />
         <Contacto />
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }

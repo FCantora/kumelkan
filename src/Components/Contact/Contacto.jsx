@@ -2,6 +2,8 @@
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 
+import styles from './Contacto.module.css';
+
 export const Contacto = () => {
     const [formData, setFormData] = useState({
         user_name: '',
@@ -37,9 +39,9 @@ export const Contacto = () => {
     };
 
     return (
-        <div>
+        <div className={styles.container}>
             <h1>Contacto</h1>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className={styles.form}>
                 <label>
                     Nombre:
                     <input type="text" name="user_name" value={formData.user_name} onChange={handleChange} required />

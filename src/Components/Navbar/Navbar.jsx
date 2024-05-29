@@ -1,9 +1,15 @@
+import { Link } from 'react-router-dom'
 import styles from './Navbar.module.css'
+
+import homeImage from '../../assets/Kumelkan - logo fondo transparente.png'
+
 export const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <>
-        <button>Home</button>
+        <Link to="/">
+          <img src={homeImage} alt="Home" className={styles.homeButton} />
+        </Link>
       </>
       <div>
         <button className={styles.button}>Qué hacemos</button>
