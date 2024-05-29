@@ -1,9 +1,8 @@
-import { Contacto } from "../Components/Contacto"
+import { Contacto } from "../Components/Contact/Contacto"
 import { Footer } from "../Components/Footer"
 import { Hacemos } from "../Components/Hacemos/Hacemos"
-import { Nosotros } from "../Components/Nosotros"
 import { Servicios } from "../Components/Servicios/Servicios"
-import { Somos } from "../Components/Somos"
+import { Somos } from "../Components/Somos/Somos"
 import styles from './Home.module.css'
 
 export const Home = () => {
@@ -12,7 +11,6 @@ export const Home = () => {
         <Hacemos />
         <Servicios />
         <Somos />
-        <Nosotros />
         <Contacto />
         <Footer />
     </div>

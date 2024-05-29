@@ -1,0 +1,23 @@
+.ol {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  width: 100%;
+}
+
+.ol li {
+  border: solid 1px #f5f7f5;
+  border-radius: 5px;
+  width: 300px;
+  height: 500px;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.ol li img {
+  width: 150px;
+  height: 150px;
+  border-radius: 2000px;
+}
