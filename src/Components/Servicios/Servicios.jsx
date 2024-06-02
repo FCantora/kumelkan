@@ -1,10 +1,8 @@
-import styles from './Servicios.module.css'
-import img from '../../assets/servicios_img.JPG'
+import styles from './Servicios.module.css';
 
 export const Servicios = () => {
     return (
         <div className={styles.container}>
-            <img src={img} alt="servicios-background" className={styles.img} />
             <div className={styles.text}>
                 <h1>¿Qué servicios brindamos?</h1>
                 <ol>
@@ -21,13 +19,14 @@ export const Servicios = () => {
                         <p>Diseño e implementación de acciones sociales con alto impacto en territorios complejos. Formulación, desarrollo y sustentación de prácticas sociales territoriales, justas, participativas, inclusivas, integradoras, efectivas, eficientes y de triple impacto a implementar desde el sector público o privado.. Diseño y Coordinación de procesos de planificación participativa de actividades, componentes, programas o proyectos sociales.</p>
                     </li>
                     <li>
-                        <h2>Investigación y generación de información</h2>
-                        <p>Realizamos investigaciones cuantitativas y cualitativas, diagnósticos y evaluaciones que nutren el trabajo que realizamos junto a nuestros aliados y permiten colaborar con el posicionamiento de temas en la opinión pública.</p>
-                    </li>
-                    <li>
                         <h2>Programas y proyectos de RSE</h2>
                         <p>Desarrollamos y gestionamos estrategias de RSE para la gestión local sustentable, a fin de obtener y/o potenciar recursos aplicables en un territorio determinado, maximizando impactos claves de la organización. Identificación y valorización de recursos y oportunidades para el diseño de estrategias locales de promoción socioeconómica. Generamos espacios de concertación y gestión asociada, para la dinamización de los recursos propios del territorio. Coordinamos acciones territoriales con diversos actores.</p>
                     </li>
+                    <li>
+                        <h2>Investigación y generación de información</h2>
+                        <p>Realizamos investigaciones cuantitativas y cualitativas, diagnósticos y evaluaciones que nutren el trabajo que realizamos junto a nuestros aliados y permiten colaborar con el posicionamiento de temas en la opinión pública.</p>
+                    </li>
+                    
                     <li>
                         <h2>Comunicación institucional</h2>
                         <p>Desarrollamos y gestionamos estrategias de comunicación integrales para la optimización de recursos y potenciar la visibilidad de nuestros aliados.  Realizamos capacitación y formación a personas involucradas y lideramos acciones que mejoren la comunicación interna y externa. </p>
@@ -35,5 +34,5 @@ export const Servicios = () => {
                 </ol>
             </div>
         </div>
-    )
+    );
 }

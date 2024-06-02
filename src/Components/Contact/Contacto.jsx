@@ -40,27 +40,25 @@ export const Contacto = () => {
 
     return (
         <div className={styles.container}>
-            <h1>Contacto</h1>
-            <form onSubmit={handleSubmit} className={styles.form}>
-                <label>
-                    Nombre:
-                    <input type="text" name="user_name" value={formData.user_name} onChange={handleChange} required />
-                </label>
-                <label>
-                    Email:
-                    <input type="email" name="user_email" value={formData.user_email} onChange={handleChange} required />
-                </label>
-                <label>
-                    Teléfono:
-                    <input type='number' name="user_phone" value={formData.user_phone} onChange={handleChange} />
-                </label>
-                <label>
-                    Mensaje:
-                    <textarea name="message" value={formData.message} onChange={handleChange} required />
-                </label>
-                <button type="submit">Send</button>
-            </form>
-            {message && <p>{message}</p>}
+            <div className={styles.text}>
+                <h1>Contacto</h1>
+                <form onSubmit={handleSubmit} className={styles.form}>
+                    <label className={styles.nombre}>
+                        <input type="text" name="user_name" placeholder="Nombre *" value={formData.user_name} onChange={handleChange} required />
+                    </label>
+                    <label className={styles.email}>
+                        <input type="email" name="user_email" placeholder="Email *" value={formData.user_email} onChange={handleChange} required />
+                    </label>
+                    <label className={styles.telefono}>
+                        <input type='number' name="user_phone" placeholder="Teléfono de contacto" value={formData.user_phone} onChange={handleChange} />
+                    </label>
+                    <label className={styles.mensaje}>
+                        <textarea name="message" rows="10" placeholder="Mensaje *" value={formData.message} onChange={handleChange} required />
+                    </label>
+                    <button type="submit">Enviar</button>
+                </form>
+                {message && <p>{message}</p>}
+            </div>
         </div>
     )
 }
