@@ -14,13 +14,16 @@ export const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.container}>
-          <Link to="/">
-            <img src={homeImage} alt="Home" className={styles.homeButton} />
-          </Link>
+        <Link to="/">
+          <img src={homeImage} alt="Home" className={styles.homeButton} />
+        </Link>
         <div className={`${styles.links} ${isMenuOpen ? styles.show : ''}`}>
           <button className={styles.button}>Qué hacemos</button>
           <button className={styles.button}>Servicios</button>
           <button className={styles.button}>Quiénes somos</button>
+          {/* <Link to="/laboratorio"> */}
+            <button className={styles.button}>Laboratorio comunitario</button>
+          {/* </Link> */}
           <button className={styles.button}>Contacto</button>
         </div>
         <div className={styles.hamburger} onClick={toggleMenu}>

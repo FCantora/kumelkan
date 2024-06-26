@@ -1,0 +1,110 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  aspect-ratio: 1920/680;
+  max-width: 100vw;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(6, 0, 0);
+}
+
+.text h1 {
+  max-width: 80%; /* Cambiado a 80% para mayor flexibilidad */
+  margin: 20px;
+  font-size: 3em; /* Cambiado a unidades relativas */
+  line-height: 1.5;
+  text-shadow: 3px 3px 3px rgb(130, 124, 124);
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-align: center;
+  text-wrap: nowrap;
+}
+
+.text p {
+  max-width: 80%; /* Cambiado a 80% para mayor flexibilidad */
+  margin: 20px;
+  font-size: 1.2em; /* Cambiado a unidades relativas */
+  line-height: 1.5;
+  text-shadow: 1px 1px 1px rgb(130, 124, 124);
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Estilos para el enlace */
+.link {
+  margin-top: 36px;
+  font-weight: 600;
+  font-size: 1.6em;
+  color: #0f5f39; /* Color azul típico de los enlaces */
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #0056b3; /* Cambia de color al pasar el mouse por encima */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1200px) {
+  .text h1 {
+    font-size: 2.5em;
+  }
+
+  .text p {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 992px) {
+  .text h1 {
+    font-size: 2em;
+  }
+
+  .text p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    aspect-ratio: auto;
+  }
+
+  .text h1 {
+    font-size: 1.5em;
+    margin: 0;
+  }
+
+  .text p {
+    font-size: 0.8em;
+    margin: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    height: 40vh;
+  }
+
+  .text {
+    padding: 10px;
+  }
+
+  .text h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .text p {
+    font-size: 0.7em;
+  }
+}

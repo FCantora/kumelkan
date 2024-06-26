@@ -7,6 +7,7 @@ import { Home } from './Views/Home'
 import { Contacto } from './Components/Contact/Contacto'
 import { Servicios } from './Components/Servicios/Servicios'
 import { Somos } from './Components/Somos/Somos'
+import { Laboratorio } from './Components/Laboratorio/Laboratorio.jsx'
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/somos" element={<Somos />} />
         <Route path="/servicios" element={<Servicios />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path='/laboratorio' element={<Laboratorio />} />
       </Routes>
     </div>
   )
